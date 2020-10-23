@@ -1,0 +1,16 @@
+repositories:
+  - name: yogesh-rabbitmq
+    url: https://ybhagwatkar.github.io/rabbitmq/.
+
+releases:
+  - name: yogesh-rabbitmq
+    namespace: yogesh-rabbitmq
+    chart: yogesh-rabbitmq/rabbitmq
+    set:
+    - name: rabbitmq.username
+      value: admin
+    - name: rabbitmq.password
+      value: admin@123
+    - name: rabbitmq.erlangCookie
+      value: secretcookie
+
