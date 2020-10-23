@@ -10,7 +10,7 @@ releases:
     - name: rabbitmq.username
       value: admin
     - name: rabbitmq.password
-      value: admin@123
+      value: admin@1111
     - name: rabbitmq.erlangCookie
       value: secretcookie
 
