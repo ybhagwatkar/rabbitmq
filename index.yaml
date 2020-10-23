@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  rabbitmq:
+  - apiVersion: v1
+    appVersion: 3.8.2
+    created: "2020-10-23T07:32:31.793610865Z"
+    deprecated: true
+    description: DEPRECATED Open source message broker software that implements the
+      Advanced Message Queuing Protocol (AMQP)
+    digest: 455114b02662c3b08ee622ccc1c880562d8aab385f936a8ef307ce01ab6829bf
+    home: https://www.rabbitmq.com
+    icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    name: rabbitmq
+    sources:
+    - https://github.com/bitnami/bitnami-docker-rabbitmq
+    urls:
+    - rabbitmq-6.18.2.tgz
+    version: 6.18.2
+generated: "2020-10-23T07:32:31.791073455Z"
