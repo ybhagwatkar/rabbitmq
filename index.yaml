@@ -3,7 +3,7 @@ entries:
   mysql:
   - apiVersion: v1
     appVersion: 5.7.30
-    created: "2020-10-24T10:33:15.257890407Z"
+    created: "2020-10-24T10:36:19.304055415Z"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system.
     digest: 4171f36d27c8d22c50c737707653df869e6a3e281462c4d3a9d1790daa800b7d
@@ -30,10 +30,10 @@ entries:
       category: Database
     apiVersion: v1
     appVersion: 11.9.0
-    created: "2020-10-24T10:33:15.262139529Z"
+    created: "2020-10-24T10:36:19.308407125Z"
     dependencies:
     - name: common
-      repository: https://charts.bitnami.com/bitnami
+      repository: https://ybhagwatkar.github.io/rabbitmq/.
       version: 0.x.x
     description: Chart for PostgreSQL, an object-relational database management system
       (ORDBMS) with an emphasis on extensibility and on standards-compliance.
@@ -62,7 +62,7 @@ entries:
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.2
-    created: "2020-10-24T10:33:15.265055022Z"
+    created: "2020-10-24T10:36:19.31127105Z"
     deprecated: true
     description: DEPRECATED Open source message broker software that implements the
       Advanced Message Queuing Protocol (AMQP)
@@ -79,4 +79,4 @@ entries:
     urls:
     - rabbitmq-6.18.2.tgz
     version: 6.18.2
-generated: "2020-10-24T10:33:15.256374188Z"
+generated: "2020-10-24T10:36:19.302452937Z"

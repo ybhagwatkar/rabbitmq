@@ -27,12 +27,12 @@ releases:
     - name: mysqlDatabase
       value: yogesh
 
-  - name: yogesh-postgresql
-    namespace: yogesh-postgresql
-    chart: yogesh-rabbitmq/postgresql
-    set:
-    - name: mysqlRootPassword
-      value: yogesh@1234
-    - name: postgresqlDatabase
-      value: yogesh-database
+#  - name: yogesh-postgresql
+#    namespace: yogesh-postgresql
+#    chart: yogesh-rabbitmq/postgresql
+#    set:
+#    - name: mysqlRootPassword
+#      value: yogesh@1234
+#    - name: postgresqlDatabase
+#      value: yogesh-database
 
