@@ -17,7 +17,7 @@ releases:
   - name: yogesh-mysql
     namespace: yogesh-mysql
     chart: yogesh-rabbitmq/mysql
-   set:
+    set:
     - name: mysqlRootPassword
       value: yogesh@6666
     - name: mysqlUser
