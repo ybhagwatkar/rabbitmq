@@ -13,6 +13,7 @@ releases:
       value: admin@6666
     - name: rabbitmq.erlangCookie
       value: secretcookie
+      
   - name: yogesh-mysql
     namespace: yogesh-mysql
     chart: yogesh-rabbitmq/mysql
