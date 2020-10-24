@@ -10,7 +10,19 @@ releases:
     - name: rabbitmq.username
       value: admin
     - name: rabbitmq.password
-      value: admin@1111
+      value: admin@6666
     - name: rabbitmq.erlangCookie
       value: secretcookie
+  - name: yogesh-mysql
+    namespace: yogesh-mysql
+    chart: yogesh-rabbitmq/mysql
+    set:
+    - name: mysqlRootPassword
+      value: yogesh@6666
+    - name: mysqlUser
+      value: yogesh
+    - name: mysqlPassword
+      value: yogesh@123
+    - name: mysqlDatabase
+      value: yogesh
 
