@@ -3,7 +3,7 @@ entries:
   mysql:
   - apiVersion: v1
     appVersion: 5.7.30
-    created: "2020-10-24T08:11:57.790001895Z"
+    created: "2020-10-24T10:33:15.257890407Z"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system.
     digest: 4171f36d27c8d22c50c737707653df869e6a3e281462c4d3a9d1790daa800b7d
@@ -25,10 +25,44 @@ entries:
     urls:
     - mysql-1.6.7.tgz
     version: 1.6.7
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 11.9.0
+    created: "2020-10-24T10:33:15.262139529Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 0.x.x
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: 495e831109a04dac8850d31384cfa442ba7f43d907c1215e007475a4a2ad0b53
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-110x117.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - postgresql-9.8.4.tgz
+    version: 9.8.4
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.2
-    created: "2020-10-24T08:11:57.793017895Z"
+    created: "2020-10-24T10:33:15.265055022Z"
     deprecated: true
     description: DEPRECATED Open source message broker software that implements the
       Advanced Message Queuing Protocol (AMQP)
@@ -45,4 +79,4 @@ entries:
     urls:
     - rabbitmq-6.18.2.tgz
     version: 6.18.2
-generated: "2020-10-24T08:11:57.78850925Z"
+generated: "2020-10-24T10:33:15.256374188Z"
