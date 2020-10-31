@@ -1,0 +1,44 @@
+[
+  {
+    "name": "main",
+    "versions": [
+      {
+        "name": "postgresql",
+        "repo": "postgresql",
+        "tag": "10.14",
+        "released": "September  28, 2020",
+        "info": [
+             { "name":"postgresql", "version":"10.14", "icon":"https://computingforgeeks.com/wp-content/uploads/2018/11/Install-PostgreSQL-11-Fedora-29-min.jpg"}
+        ]
+      },
+      {
+        "name": "postgresql",
+        "repo": "postgresql",
+        "tag": "11.9",
+        "released": "September  28, 2020",
+        "info": [
+             { "name":"postgresql", "version":"11.9", "icon":"https://computingforgeeks.com/wp-content/uploads/2018/11/Install-PostgreSQL-11-Fedora-29-min.jpg"}
+        ]
+      },
+      {
+        "name": "postgresql",
+        "repo": "postgresql",
+        "tag": "12.4",
+        "released": "September  28, 2020",
+        "info": [
+             { "name":"postgresql", "version":"12.4", "icon":"https://computingforgeeks.com/wp-content/uploads/2018/11/Install-PostgreSQL-11-Fedora-29-min.jpg"}
+        ]
+      },
+      {
+        "name": "postgresql",
+        "repo": "postgresql",
+        "tag": "13.0",
+        "released": "March 31, 2020",
+        "info": [
+             { "name":"postgresql", "version":"13.0", "icon":"https://computingforgeeks.com/wp-content/uploads/2018/11/Install-PostgreSQL-11-Fedora-29-min.jpg"}
+        ]
+      }
+    ]
+  }
+]
+
