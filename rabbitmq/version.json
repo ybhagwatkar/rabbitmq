@@ -1,0 +1,18 @@
+[
+  {
+    "name": "main",
+    "versions": [
+      {
+        "name": "rabbitmq",
+        "repo": "rabbitmq",
+        "tag": "3.8.9",
+        "released": "September  28, 2020",
+        "info": [
+             { "name":"rabbitmq", "version":"3.8.9", "icon":"https://pedrorijo.com/assets/img/rabbitmq_logo.png"}
+        ]
+      }
+    ]
+  }
+]
+
+

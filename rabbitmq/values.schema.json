@@ -6,7 +6,7 @@
 			"properties": {
 				"password": {
 					"type": "string",
-					"description": "Postgresql Root Password",
+					"description": "Rabbitmq Root Password",
 					"title": "Root Password",
 					"form": true,
 					"value": "",
@@ -21,7 +21,7 @@
 			"properties": {
 				"user": {
 					"type": "string",
-					"description": "Postgresql User to create",
+					"description": "Rabbitmq User to create",
 					"title": "User",
 					"value": "admin",
 					"form": true,
@@ -31,7 +31,7 @@
 				"password": {
 					"type": "string",
 					"title": "User Password",
-					"description": "Strong password  for a Postgresql user",
+					"description": "Strong password  for a Rabbitmq user",
 					"form": true,
 					"value": "",
 					"hidden": true,
