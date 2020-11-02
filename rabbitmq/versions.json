@@ -3,7 +3,7 @@
     "name": "main",
     "versions": [
       {
-        "name": "rabbitmq",
+        "name": "3.8.9",
         "repo": "rabbitmq",
         "tag": "3.8.9",
         "released": "September  28, 2020",

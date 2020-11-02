@@ -201,7 +201,7 @@ ldap:
 
 ## Kubernetes service type
 service:
-  type: ClusterIP
+  type: LoadBalancer
   ## Node port
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
@@ -282,7 +282,7 @@ persistence:
   # existingClaim: ""
 
   # If you change this value, you might have to adjust `rabbitmq.diskFreeLimit` as well.
-  size: 8Gi
+  size: 1Gi
 
   # persistence directory, maps to the rabbitmq data directory
   path: /opt/bitnami/rabbitmq/var/lib/rabbitmq
@@ -290,7 +290,13 @@ persistence:
 ## Configure resource requests and limits
 ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
 ##
-resources: {}
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
 
 networkPolicy:
   ## Enable creation of NetworkPolicy resources. Only Ingress traffic is filtered for now.
@@ -331,9 +337,6 @@ updateStrategy:
 ## Node labels and tolerations for pod assignment
 ## ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector
 ## ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#taints-and-tolerations-beta-feature
-nodeSelector: {}
-tolerations: []
-affinity: {}
 podDisruptionBudget: {}
   # maxUnavailable: 1
   # minAvailable: 1
@@ -566,6 +569,7 @@ extraSecrets: {}
 
 nodePool:
   deployment: np-starter
+
 affinity:
   enabled: false
   requiredDuringSchedulingIgnoredDuringExecution:
@@ -580,6 +584,7 @@ affinity:
 ## Tolerations for pod assignment. Evaluated as a template.
 ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
 ##
+
 tolerations:
   enabled: false
   key: keyname

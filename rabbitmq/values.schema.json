@@ -1,92 +1,47 @@
 {
-	"type": "object",
-	"properties": {
-		"root": {
-			"type": "object",
-			"properties": {
-				"password": {
-					"type": "string",
-					"description": "Rabbitmq Root Password",
-					"title": "Root Password",
-					"form": true,
-					"value": "",
-					"hidden": true,
-					"validation": "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^a-zA-Z0-9])(?!.*\\s).{10,}$",
-					"errorDescription": "Must contain at least 1 number, 1 special character, 1 uppercase and lowercase letter with 10 or more length"
-				}
-			}
-		},
-		"db": {
-			"type": "object",
-			"properties": {
-				"user": {
-					"type": "string",
-					"description": "Rabbitmq User to create",
-					"title": "User",
-					"value": "admin",
-					"form": true,
-					"validation": "^[a-z0-9_]*$",
-					"errorDescription": "Allowed only lowercase characters, numbers and underscore"
-				},
-				"password": {
-					"type": "string",
-					"title": "User Password",
-					"description": "Strong password  for a Rabbitmq user",
-					"form": true,
-					"value": "",
-					"hidden": true,
-					"validation": "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^a-zA-Z0-9])(?!.*\\s).{10,}$",
-					"errorDescription": "Must contain at least 1 number, 1 special character, 1 uppercase and lowercase letter with 10 or more length"
-				}
-			}
-		},
-		"replication": {
-			"type": "object",
-			"properties": {
-				"enabled": {
-					"value": true,
-					"form": true,
-					"type": "boolean",
-					"linked_to": "slave",
-					"title": "Enable replication",
-					"description": "Enable or disable the replication"
-				}
-			}
-		},
-		"master": {
-			"type": "object",
-			"properties": {
-				"persistence": {
-					"type": "object",
-					"properties": {
-						"size": {
-							"type": "number",
-							"title": "Storage size",
-							"value": 4
-						}
-					}
-				}
-			}
-		},
-		"slave": {
-			"type": "object",
-			"properties": {
-				"persistence": {
-					"type": "object",
-					"properties": {
-						"size": {
-							"type": "number",
-							"title": "Storage size",
-							"value": 4
-						}
-					}
-				},
-				"replicas": {
-					"type": "number",
-					"title": "No of replications",
-					"value": 1
-				}
-			}
-		}
-	}
+  "type": "object",
+  "properties": {
+    "rabbitmq": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "title": "RabbitMQ user",
+          "form": true,
+	  "value": "rabbitmq",
+	  "validation": "^[a-z0-9_]*$",
+          "errorDescription": "Allowed only lowercase characters, numbers and underscore"
+        },
+        "password": {
+          "type": "string",
+          "title": "RabbitMQ password",
+          "form": true,
+	  "value": "",
+          "hidden": true,
+          "validation": "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^a-zA-Z0-9])(?!.*\\s).{10,}$",
+          "errorDescription": "Must contain at least 1 number, 1 special character, 1 uppercase and lowercase letter with 10 or more length"
+        }
+      }
+    },
+    "replicas": {
+      "type": "number",
+      "form": true,
+      "title": "Number of replicas",
+      "description": "Number of replicas to deploy"
+    },
+    "persistence": {
+      "type": "object",
+      "title": "Persistence configuration",
+      "form": true,
+      "properties": {
+        "size": {
+          "type": "string",
+          "title": "Persistent Volume Size",
+          "form": true,
+	  "value": 1,
+          "unit": "GB"
+        }
+      }
+    }
+  }
 }
